@@ -10,8 +10,12 @@ doesKeyExist(obj1, 'course'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
+// function doesKeyExist(obj, key) {
+// 	return key in obj;
+// }
+
 function doesKeyExist(obj, key) {
-  // Your code here
+	return obj[key] !== undefined;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
